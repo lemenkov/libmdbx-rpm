@@ -6,6 +6,7 @@ License:    Apache-2.0
 URL:        https://libmdbx.dqdkfa.ru
 VCS:	    git:https://sourcecraft.dev/dqdkfa/libmdbx.git
 Source0:    %{url}/release/%{name}-amalgamated-%{version}.tar.xz
+Patch:      libmdbx-0001-Set-soversion.patch
 BuildRequires: binutils
 BuildRequires: cmake
 BuildRequires: gcc
