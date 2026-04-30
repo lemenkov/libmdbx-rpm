@@ -1,5 +1,5 @@
 Name:       libmdbx
-Version:    0.13.11
+Version:    0.13.12
 Release:    %autorelease
 Summary:    An amazingly fast key-value database library
 License:    Apache-2.0
