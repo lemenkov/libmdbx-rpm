@@ -6,11 +6,11 @@ Subject: [PATCH] Set soversion
 Signed-off-by: Peter Lemenkov <lemenkov@gmail.com>
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 9f0a745..8a7f9d0 100644
+index 1045687..b29a6b0 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -681,6 +681,7 @@ target_include_directories(mdbx-static INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}")
- if(MDBX_BUILD_SHARED_LIBRARY)
+@@ -728,6 +728,7 @@ if(MDBX_BUILD_SHARED_LIBRARY)
+   endif()
    add_library(mdbx SHARED ${LIBMDBX_SOURCES})
    set_target_properties(mdbx PROPERTIES PUBLIC_HEADER "${LIBMDBX_PUBLIC_HEADERS}")
 +  set_target_properties(mdbx PROPERTIES VERSION "${LIBRARY_VERSION}" SOVERSION "${MDBX_VERSION_MAJOR}.${MDBX_VERSION_MINOR}.${MDBX_VERSION_RELEASE}")
