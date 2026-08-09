@@ -6,10 +6,10 @@ Subject: [PATCH] Set soversion
 Signed-off-by: Peter Lemenkov <lemenkov@gmail.com>
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 1045687..b29a6b0 100644
+index 0eb3599..b96bec1 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -728,6 +728,7 @@ if(MDBX_BUILD_SHARED_LIBRARY)
+@@ -853,6 +853,7 @@ if(MDBX_BUILD_SHARED_LIBRARY)
    endif()
    add_library(mdbx SHARED ${LIBMDBX_SOURCES})
    set_target_properties(mdbx PROPERTIES PUBLIC_HEADER "${LIBMDBX_PUBLIC_HEADERS}")
